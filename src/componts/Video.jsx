@@ -2,12 +2,12 @@ import { Box, Stack } from "@mui/material";
 import {Videocard,Chanelcard} from '../componts'
 
 
-const Video = ({video}) => {
+const Video = ({video,direction}) => {
 
   
   
   return (
-    <Stack direction={'row'} flexWrap={'wrap'} justifyContent={'start'}
+    <Stack direction={direction || "row"} flexWrap={'wrap'} justifyContent={'start'}
     gap={2}>
      {video.map((item,idx)=>(
       <Box key={idx}>
