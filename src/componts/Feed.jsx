@@ -12,6 +12,8 @@ const Feed = () => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
     .then((data)=>setVideo(data.items))
   },[selectedCategory])
+  console.log(selectedCategory);
+  
   return (
     
     <Stack sx={{ flexDirection:{sx:'column',md:'row'}}}>

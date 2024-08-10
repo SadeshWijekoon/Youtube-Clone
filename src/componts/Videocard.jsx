@@ -32,6 +32,12 @@ const Videocard = ({video : {id:{videoId},snippet}}) => {
                 <CheckCircle sx={{fontSize:12,color:'garay',ml:'5px'}}/>
                 
                </Typography>
+                 <br/>
+               <Typography variant="Subtitile1"  color={"#fff"}>
+                {snippet?.publishTime} 
+                
+               </Typography>
+               
              </Link>
          </CardContent>
 
