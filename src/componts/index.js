@@ -7,4 +7,4 @@ export {default as SearchBar} from './SearchBar';
 export {default as Sidebar}from './Sidebar';
 export {default as Video} from './Video';
 export {default as Videocard} from './Videocard';
-export {default as Chanelcard} from './Chanelcard';
+export {default as ChannelCard} from './Channelcard';

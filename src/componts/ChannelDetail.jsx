@@ -2,7 +2,8 @@ import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchFromAPI } from "../utils/fetchFromApi";
-import ChannelCard from "./Chanelcard";
+import ChannelCard from "./Channelcard";
+
 
 
 const ChannelDetail = () => {
@@ -31,9 +32,14 @@ const ChannelDetail = () => {
       }} 
        
        />
-       <ChannelCard chanelDetail={channelDetail} marginTop="-95px"/> {/*sending the marginTop style to the chanelcard via prop. */}
+       <ChannelCard chanelDetail={channelDetail} marginTop="-110px"/> {/*sending the marginTop style to the chanelcard via prop. */}
      </Box>
-       
+     <Box display={'flex'} p='2'>
+       <Box sx={{mr:{sm:'100px'}}}>
+       {/* <Video/>    */}
+       </Box>
+     </Box>
+    
     </Box>
   )
 }
