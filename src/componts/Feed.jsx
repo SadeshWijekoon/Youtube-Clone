@@ -27,8 +27,8 @@ const Feed = () => {
       <Typography className='copyright' variant='body2' sx={{mt:1.5,color:'#fff'}}>
         Copyright 2024 @ Sadesh Wijekoon
       </Typography>
-
-      </Box>
+    </Box>
+      
       <Box p={2} sx={{height:'98vh',flex:2,overflowY:'auto'}} >
 
         <Typography   variant='h4' fontWeight={'bold'} mb={2} sx={{color:'white'}}>

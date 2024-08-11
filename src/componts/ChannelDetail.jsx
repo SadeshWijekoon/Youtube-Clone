@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchFromAPI } from "../utils/fetchFromApi";
 import ChannelCard from "./Channelcard";
+import { Video } from ".";
 
 
 
@@ -35,9 +36,9 @@ const ChannelDetail = () => {
        <ChannelCard chanelDetail={channelDetail} marginTop="-110px"/> {/*sending the marginTop style to the chanelcard via prop. */}
      </Box>
      <Box display={'flex'} p='2'>
-       <Box sx={{mr:{sm:'100px'}}}>
-       {/* <Video/>    */}
-       </Box>
+       <Box sx={{mr:{sm:'100px'}}}/>
+         <Video video={videos}/> {/* this is for displaying the video */}
+       
      </Box>
     
     </Box>
