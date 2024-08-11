@@ -4,7 +4,7 @@ import {Videocard,ChannelCard} from '../componts'
 
 const Video = ({video,direction}) => {
 
-  console.log(video);
+  if(!video?.length) return 'loading....'
   
   
   return (
