@@ -2,15 +2,14 @@ FROM ubuntu
 
 WORKDIR /app
 
-COPY package.json ./
+COPY package*.json ./
 
 RUN apt-get update && \
-apt-get install -y nodejs npm && \
-npm install
+    apt-get install -y nodejs npm && \
+    npm install
 
 COPY . .
 
 EXPOSE 3000
 
-CMD [ "npm" "start" ]
-
+CMD ["npm", "start"]
