@@ -1,6 +1,6 @@
 FROM ubuntu
 
-WORKDIR /app
+WORKDIR /my_react_app
 
 COPY package*.json ./
 
